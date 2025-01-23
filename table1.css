@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(254, 210, 168);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-container{
+    max-width:100%;
+    background-color: rgb(213, 213, 80);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background-color: blueviolet;
+}
+th,td{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid rgb(55, 63, 223);
+}
+tr:hover{
+    background-color: bisque;
+    text-transform: uppercase;
+}
+th:hover{
+    background-color: aquamarine;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+

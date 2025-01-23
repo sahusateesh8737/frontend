@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev</title>
+</head>
+<style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            word-spacing: 100px;
+            justify-content: left;
+            background-color: rgba(160, 25, 233, 0.874);
+            padding: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #f0f0f0;
+        }
+    nav{
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        word-spacing: 100px;
+        justify-content: left;
+    }
+    .heading{
+        color: rgba(160, 25, 233, 0.874);
+    }
+    .list{
+        color: rgba(151, 8, 134, 0.874);
+    }
+    .form-container {
+        min-height: calc(100vh - 60px); /* Subtract nav height */
+        position: relative;
+    }
+    .registration-form {
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid rgba(160, 25, 233, 0.874);
+        border-radius: 8px;
+        width: fit-content;
+        box-shadow: 0 0 10px rgba(160, 25, 233, 0.2);
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .registration-form input {
+        margin: 10px 0;
+        padding: 5px;
+        width: 200px;
+    }
+    .registration-form label {
+        display: inline-block;
+        width: 100px;
+    }
+    .registration-form button {
+        margin-top: 15px;
+        padding: 8px 20px;
+        background-color: rgba(160, 25, 233, 0.874);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: rgba(151, 8, 134, 0.874);
+    }
+    .country-select {
+        padding: 8px;
+        font-size: 16px;
+        border: 2px solid rgba(160, 25, 233, 0.874);
+        border-radius: 4px;
+        width: 200px;
+        margin: 20px 0;
+    }
+    .country-select option {
+        padding: 8px;
+    }
+    .password-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: rgba(160, 25, 233, 0.874);
+        user-select: none;
+    }
+</style>
+<body>
+   
+
+<header> 
+    <nav>
+        <ul class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+        </ul>
+    </nav>
+</header>
+
+<div class="form-container">
+    <div class="registration-form">
+        <h3>Registration Form</h3>
+
+<label for="username">UserName:</label>
+<input type="text" placeholder="Enter your name" required>
+<br><br>
+<label for="password">Password:</label>
+<div class="password-container">
+    <input type="password" placeholder="Enter your password" required name="password" id="password">
+    <span class="toggle-password" id="togglePassword" onclick="togglePassword()">👁️‍🗨️</span>
+</div>
+<br><br>
+<label for="email">Email:</label>
+<input type="text" placeholder="Enter your email" required>
+<br><br>
+<label for="phone number">Phone No:</label>
+<input type="number" placeholder="Enter your phone number" required name="" id="">
+<br><br>
+<label for="dob">Date of Birth:</label>
+<input type="date" placeholder="Enter your date of birth" required name="" id="">
+<br><br>
+<label for="gender">Gender:</label>
+<input type="radio" name="gender" id="male">
+<label for="male">Male</label>
+<input type="radio" name="gender" id="female">
+<label for="female">Female</label>
+<br><br>
+<label for="country">Country:</label>
+<select name="country" id="country" class="country-select">
+    <option value="">Select Country</option>
+    <option value="india">India</option>
+    <option value="usa">United States</option>
+    <option value="uk">United Kingdom</option>
+    <option value="canada">Canada</option>
+    <option value="australia">Australia</option>
+    <option value="germany">Germany</option>
+    <option value="france">France</option>
+    <option value="japan">Japan</option>
+    <option value="china">China</option>
+    <option value="brazil">Brazil</option>
+    <option value="russia">Russia</option>
+    <option value="south_korea">South Korea</option>
+    <option value="italy">Italy</option>
+    <option value="spain">Spain</option>
+    <option value="mexico">Mexico</option>
+    <option value="singapore">Singapore</option>
+    <option value="new_zealand">New Zealand</option>
+    <option value="switzerland">Switzerland</option>
+    <option value="sweden">Sweden</option>
+    <option value="norway">Norway</option>
+</select>
+<br><br>
+<label for="address">Address:</label>
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<br><br>
+<button>Submit</button>
+</div>
+</div>
+
+
+<!-- this is list tag  with start attribute-->
+<!-- <ol start="1">
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+</ol>
+<ol start="100">
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+</ol> -->
+
+<!-- end of list tag-->
+
+
+<!-- <ul type="circle">
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+</ul>
+<ul type="square">
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+    <li class="list">item 4</li>
+</ul> -->
+
+<!-- this is heading tag -->
+    <!-- <h1 class="heading">Welcome to Web Development</h1>
+    <h2 class="heading">Welcome to Web Development</h2>
+    <h3 class="heading">Welcome to Web Development</h3>
+    <h4 class="heading">Welcome to Web Development</h4>
+    <h5 class="heading">Welcome to Web Development</h5>
+    <h6 class="heading">Welcome to Web Development</h6> -->
+
+<script>
+    function togglePassword() {
+        const passwordInput = document.getElementById('password');
+        const toggleIcon = document.getElementById('togglePassword');
+        
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            toggleIcon.textContent = '👁️';
+        } else {
+            passwordInput.type = 'password';
+            toggleIcon.textContent = '👁️‍🗨️';
+        }
+    }
+</script>
+
+</body>
+</html>

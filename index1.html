@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Web dev</title>
+
+    <!-- internal CSS -->
+
+
+    <style>
+
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- this is list tag  with start attribute-->
+<ol start="1">
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+</ol>
+<ol start="100">
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+</ol>
+
+<!-- end of list tag-->
+
+
+<ul>
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+</ul>
+<ul>
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 1</li>
+    <li class="list">item 2</li>
+    <li class="list">item 3</li>
+    <li class="list">item 4</li>
+    <li class="list">item 4</li>
+</ul>
+
+<!-- this is heading tag -->
+    <h1 class="heading">Welcome to Web Development</h1>
+     <!-- inline CSS -->
+    <h2 style="color: rgb(24, 33, 214);" >Welcome to Web Development</h2>
+    <h3  class="heading">Welcome to Web Development</h3>
+    <h4 id ="heading">Welcome to Web Development</h4>
+    <h5 >Welcome to Web Development</h5>
+    <h6 >Welcome to Web Development</h6>
+
+    <div class="form-container">
+        <div class="registration-form">
+            <h3>Registration Form</h3>
+    
+    <label for="username">UserName:</label>
+    <input type="text" placeholder="Enter your name" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <div class="password-container">
+        <input type="password" placeholder="Enter your password" required name="password" id="password">
+        <span class="toggle-password" id="togglePassword"">👁️‍🗨️</span>
+    </div>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="text" placeholder="Enter your email" required>
+    <br><br>
+    <label for="phone number">Phone No:</label>
+    <input type="number" placeholder="Enter your phone number" required name="" id="">
+    <br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" placeholder="Enter your date of birth" required name="" id="">
+    <br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+    <br><br>
+    <label for="country">Country:</label>
+    <select name="country" id="country" class="country-select">
+        <option value="">Select Country</option>
+        <option value="india">India</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+        <option value="japan">Japan</option>
+        <option value="china">China</option>
+        <option value="brazil">Brazil</option>
+        <option value="russia">Russia</option>
+        <option value="south_korea">South Korea</option>
+        <option value="italy">Italy</option>
+        <option value="spain">Spain</option>
+        <option value="mexico">Mexico</option>
+        <option value="singapore">Singapore</option>
+        <option value="new_zealand">New Zealand</option>
+        <option value="switzerland">Switzerland</option>
+        <option value="sweden">Sweden</option>
+        <option value="norway">Norway</option>
+    </select>
+    <br><br>
+    <label for="address">Address:</label>
+    <textarea name="" id="address" cols="30" rows="10"></textarea>
+    <br><br>
+    <button>Submit</button>
+    </div>
+    </div>
+
+</body>
+</html>

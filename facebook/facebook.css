@@ -1,0 +1,111 @@
+body {
+    background-color: #e8ebee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+    color: rgb(43, 80, 245);
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 200px
+}
+.left{
+    width: 50%;
+    height: 200px;
+   
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.tagline {
+    color: black;
+    font-size: 23px;
+}
+
+.right{
+    width: 50%;
+    height: 200px;
+}
+.login-box {
+background-color: whitesmoke;
+border-radius: 10px;
+margin: 50px auto;
+padding: 20px;
+width: 400px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.email,
+.password {
+    width: 100%;
+    padding: 15px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #121efb;
+    color: #e0e0e0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 118%;
+    align-items: center;
+    text-align: center
+}
+.create-new-account{
+    border-radius: 4px;
+    background-color: #42b72a;
+    border: none;
+    width: 118%;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px
+}
+
+.forgot-password{
+    text-align: center;
+    margin-top: 10px;    
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;   
+    padding-left: 30px;    
+}
+
+.create-page{
+    color: #061121;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 30px;
+    text-align: center;
+}   
+a{
+    color: black;
+    font-weight: bold;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+    width: 240%;
+  margin-left: -120px;
+    align-items: center;
+}

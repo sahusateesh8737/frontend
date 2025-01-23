@@ -1,0 +1,58 @@
+
+/* 
+body {
+    background-color: rgba(49, 201, 115, 0.874);
+} */
+
+
+/* univarsal selector  */
+
+* {
+    background-color: rgb(114, 251, 146);
+}
+
+
+/* class selector */
+
+.heading {
+    color: red;
+}
+
+/* id selector */
+
+#heading {
+    color: rgba(195, 36, 235, 0.933);
+}
+
+
+/* group selector */
+
+option,label{
+    color: rgba(205, 120, 9, 0.874);
+}
+
+/* attribute selector */
+
+input[type="text"]{
+    color: rgba(73, 19, 209, 0.874);
+    border: 2px solid rgba(73, 19, 209, 0.874);
+    border-radius: 4px;
+    border-style: double;
+}
+
+#address{
+    color: rgba(73, 19, 209, 0.874);
+    border: 10px solid rgba(73, 19, 209, 0.874);
+    border-radius: 10px;
+    
+    border-style: dotted;
+}
+h1:hover{
+    color: rgba(240, 54, 17, 0.874);
+}
+
+
+
+h1:pointer{
+    color: rgba(193, 11, 126, 0.874);
+}
