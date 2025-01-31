@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Feedback Form</title>
+</head>
+<body class="bg-blue-400 flex items-center justify-center min-h-screen">
+    <div class="bg-blue-50 p-8 rounded-lg shadow-lg w-full max-w-md flip-in-x">
+        <h1 class="text-3xl font-bold text-black text-center mb-6">Feedback Form</h1>
+        <form action="">
+            <div class="mb-4">
+                <label class="block text-cyan-500 text-sm font-semibold mb-2" for="name">Full Name</label>
+                <input class="w-full border-2 rounded-lg p-2" type="text" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="mb-4">
+                <label class="block text-cyan-500 text-sm font-semibold mb-2" for="email">Email</label>
+                <input class="w-full border-2 rounded-lg p-2" type="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="mb-4">
+                <label class="block text-cyan-500 text-sm font-semibold mb-2" for="message">Message</label>
+                <textarea class="w-full border-2 rounded-lg p-2" id="message" rows="4" placeholder="Enter Your Message"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="bg-cyan-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-cyan-600" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
